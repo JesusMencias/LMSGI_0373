@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Leccion 001: Que es un lenguaje de marcas definicion y codificacion | LMSGI 0373 | Codigo Autodidacta -->
+<datos>
+    <concepto id="1">
+        <nombre>Lenguaje de Marcas</nombre>
+        <descripcion>Sistema de codificacion que combina texto con metadatos estructurales.</descripcion>
+        <tipo>Descriptivo</tipo>
+    </concepto>
+</datos>
+
+<!-- TRAMPA FRECUENTE: No cerrar las etiquetas o solapar elementos (anidamiento incorrecto). -->
+<!-- INCORRECTO: <etiqueta1><etiqueta2></etiqueta1></etiqueta2> -->
+<!-- CORRECTO:   <etiqueta1><etiqueta2></etiqueta2></etiqueta1> -->
