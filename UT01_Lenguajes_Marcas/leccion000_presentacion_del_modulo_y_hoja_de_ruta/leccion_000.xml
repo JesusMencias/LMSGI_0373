@@ -1,0 +1,9 @@
+<!-- Leccion 000: Presentacion del modulo y hoja de ruta | LMSGI 0373 | Codigo Autodidacta -->
+<presentacion>
+    <titulo>Lenguajes de Marcas y Sistemas de Gestion de Informacion</titulo>
+    <enfoque>Estandarizacion, Estructura y Semantica</enfoque>
+    <unidades>7 unidades de trabajo</unidades>
+</presentacion>
+<!-- TRAMPA FRECUENTE: Intentar aprender frameworks antes de dominar la semantica base -->
+<!-- INCORRECTO: Saltarse la estructura y validacion del dato -->
+<!-- CORRECTO:   Validar y estructurar la informacion desde el origen -->
