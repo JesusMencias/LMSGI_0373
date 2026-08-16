@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Leccion 004: Entidades Predefinidas y CDATA | LMSGI 0373 | Codigo Autodidacta -->
+<catalogo>
+    <!-- Uso de entidades predefinidas en texto simple (PCDATA) -->
+    <articulo id="A-101">
+        <nombre>Guia de Programacion C &amp; C++</nombre>
+        <condicion>Precio &lt; 50 &amp;&amp; Stock &gt; 0</condicion>
+    </articulo>
+
+    <!-- Uso de seccion CDATA para bloques de codigo o texto con multiples simbolos -->
+    <articulo id="A-102">
+        <nombre>Script de Validacion</nombre>
+        <codigo_fuente>
+            <![CDATA[
+            if (precio < 100 && stock > 0) {
+                return "Valido & Disponible";
+            }
+            ]]>
+        </codigo_fuente>
+    </articulo>
+</catalogo>
+
+<!-- TRAMPA FRECUENTE: Usar caracteres reservados directos sin escapar o anidar bloques CDATA. -->
+<!-- INCORRECTO: <condicion>precio < 50</condicion> (Rompe el parseo) -->
+<!-- CORRECTO:   <condicion>precio &lt; 50</condicion> -->
