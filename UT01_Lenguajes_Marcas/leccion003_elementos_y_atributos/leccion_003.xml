@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Leccion 003: Elementos y atributos | LMSGI 0373 | Codigo Autodidacta -->
+<tienda>
+    <!-- Elemento para datos principales, atributo para metadatos -->
+    <producto id="P001" moneda="EUR">
+        <nombre>Teclado Mecanico</nombre>
+        <precio>85</precio>
+    </producto>
+</tienda>
+
+<!-- TRAMPA FRECUENTE: Usar atributos para datos que deberian ser elementos. -->
+<!-- INCORRECTO: <producto nombre="Teclado" /> (No permite expandir el nombre) -->
+<!-- CORRECTO:   <producto id="P001"><nombre>Teclado</nombre></producto> -->
