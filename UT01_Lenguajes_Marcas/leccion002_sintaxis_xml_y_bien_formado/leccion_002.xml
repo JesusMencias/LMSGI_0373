@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Leccion 002: Sintaxis XML - Bien formado | LMSGI 0373 | Codigo Autodidacta -->
+<empresa> <!-- Elemento raiz unico -->
+    <empleado id="1">
+        <nombre>Jesus</nombre>
+        <rol>Arquitecto</rol>
+    </empleado> <!-- Anidamiento correcto -->
+</empresa>
+
+<!-- TRAMPA FRECUENTE: Solapamiento. -->
+<!-- INCORRECTO: <empleado><nombre>Jesus</empleado></nombre> -->
+<!-- CORRECTO:   <empleado><nombre>Jesus</nombre></empleado> -->
