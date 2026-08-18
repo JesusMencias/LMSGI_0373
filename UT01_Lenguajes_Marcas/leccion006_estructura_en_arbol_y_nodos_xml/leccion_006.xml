@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Leccion 006: Estructura en Arbol y Tipos de Nodos | LMSGI 0373 | Codigo Autodidacta -->
+<!-- Nodo Documento: Contenedor global en memoria -->
+<departamento codigo="DEP-INF"> <!-- Nodo Elemento Raiz con Nodo Atributo -->
+    
+    <!-- Nodo Comentario -->
+    <!-- Lista de empleados adscritos: Nodos Hijos del elemento raiz -->
+    <empleado id="EMP-01"> <!-- Nodo Padre respecto a nombre y salario -->
+        <nombre>Marcos Gomez</nombre> <!-- Nodo Elemento con Nodo Texto interno -->
+        <salario moneda="EUR">28500.00</salario> <!-- Nodo Hermano de <nombre> -->
+    </empleado>
+
+    <empleado id="EMP-02"> <!-- Nodo Hermano de EMP-01 -->
+        <nombre>Elena Perez</nombre>
+        <salario moneda="EUR">32000.00</salario>
+    </empleado>
+
+</departamento>
+
+<!-- TRAMPA FRECUENTE: Tratar los atributos como nodos hijos directos o asumir múltiples raíces. -->
+<!-- INCORRECTO: Acceder a @codigo esperando encontrarlo en la colección de nodos hijos -->
+<!-- CORRECTO:   Los atributos son propiedades del elemento, los hijos son sus nodos anidados -->
